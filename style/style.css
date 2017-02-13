@@ -1,0 +1,20 @@
+@CHARSET "UTF-8";
+
+a:link {
+	color: #ff0000;
+  
+}
+
+a:visited {
+	color: #000000;
+
+}
+a:hover {
+	color: #00f;
+
+}
+
+body.classTwo {
+	background-color: #ebacaa;
+
+}
