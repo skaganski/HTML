@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Formid</title>
+  <style>
+  table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+  h1{
+    color: red
+  }
+  </style>
+</head>
+<body>
+  <form name="getForm" Action ="Formid2.html" method="GET">
+  <table>
+    <caption><h1>Formid</h1></caption>
+    <tr>
+      <th>Formi nimi:</th>
+      <th>Näide:</th>
+      </tr>
+        <tr>
+          <td>input:text</td>
+          <td><input type="text" placeholder="Nimi" name="firstname"></td>
+        </tr>
+      <tr>
+        <td>input:password</td>
+        <td><input type="password" name="password"></td>
+      </tr>
+      <tr>
+        <td>input:file</td>
+      <td><input type="file"></td>
+    </tr>
+    <tr>
+    <td> input:color </td>
+    <td><input type="color" name="favcolor"></td>
+  </tr>
+      <tr>
+        <td>input:number</td>
+        <td><input type="number" name="favnumber" min="0" max="100" step="1"></td>
+      </tr>
+      <tr>
+        <td>select day</td>
+        <td>
+          <select name="selectDay">
+            <option> Monday</option>
+            <option> Tuesday</option>
+            <option> Wednesday</option>
+            <option> Thursday</option>
+            <option> Friday</option>
+            <option> Saturday</option>
+            <option> Sunday</option>
+          </select>
+        </td>
+      </tr>
+  </table>
+  <br>
+      <input type="radio" name="gender" value="male" checked>Male
+      <input type="radio" name="gender" value="female">Female
+    <br>
+      <button type="submit" value="get" name="getButton">Send</button>
+    </form>
+
+</body>
+</html>

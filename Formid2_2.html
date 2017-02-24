@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Formid2.2</title>
+  <style>
+  table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+  h1{
+    color: red
+  }
+  </style>
+</head>
+<body>
+  <form name="getForm" Action ="Formid2_2.html" method="post">
+  <table>
+    <caption><h1>Formid 2.2</h1></caption>
+    <tr>
+      <td>
+        textArea
+      </td>
+      <td>
+        <textarea name="textArea" ></textarea>
+      </td>
+    </tr>
+    <tr>
+      <td>select day</td>
+      <td>
+        <select name="selectDay">
+          <option> Monday</option>
+          <option> Tuesday</option>
+          <option> Wednesday</option>
+          <option> Thursday</option>
+          <option> Friday</option>
+          <option> Saturday</option>
+          <option> Sunday</option>
+        </select>
+      </td>
+    </tr>
+  </table>
+    <br>
+      <button type="submit" value="post" name="postButton">Post</button>
+    </form>
+
+</body>
+</html>
