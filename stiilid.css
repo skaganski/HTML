@@ -1,0 +1,31 @@
+#roheline{
+  color: green;
+}
+#joonitud{
+  text-decoration: underline;
+}
+#taust{
+  background-color: #556b2f;
+}
+#suurem{
+  font-size: 200%;
+}
+#mono{
+  font-family: monospace;
+}
+#paks{
+  border: solid;
+  background-color: yellow;
+}
+#nurgad{
+  border: 1px;
+  border-radius: 7px;
+  border-style: dashed;
+}
+#keskel{
+font-style: italic;
+text-align: center;
+}
+#kursor{
+  cursor: crosshair;
+}
