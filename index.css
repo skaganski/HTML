@@ -1,0 +1,36 @@
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    color: navy;
+    margin-left: 20px;
+    font-style: italic;
+}
+img.resize{
+   width:200px;
+   height:40px;
+}
+
+#lingid li{
+  font-size: 20px;
+  list-style: square;
+  background-color: grey;
+  width: 100px;
+  font-style: oblique;
+}
+h2:hover {
+  color: red;
+  font-style: oblique;
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: green;
+}
+
+#pictures li{
+  justify-content: center;
+
+}
+#lingid li:hover{
+  background-color: yellow;
+}
