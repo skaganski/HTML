@@ -1,16 +1,16 @@
 #main{
-	height:200px;
-	width:200px;
+	height: 200px;
+	width: 200px;
 	position:fixed;
-	left: 100px;
-	top: 100x;
+	left: 200px;
+	top: 100px;
 	background-color: transparent;
 }
-img{
+#duck{
 	position:fixed;
 	width:100%;
-	left:0px;
-	bottom:0px;
+	left: 0;
+	bottom: 0;
 }
 .additional{
 	border-radius: 50%;
@@ -58,4 +58,10 @@ div:nth-child(6){
     top: calc((100% - 25%) / 2);
     left: calc((100% - 25%) / 2);
     background-color: red;
+}
+#check {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background-color: transparent;
 }
