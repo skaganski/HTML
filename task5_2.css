@@ -1,0 +1,31 @@
+.bead{
+	height: 50px;
+	width:50px;
+	background-color:grey;
+	border-radius: 50%;
+	box-shadow: 0px -11px 23px -3px black inset;
+	float:left;
+	margin-top: -25px;
+}
+.row{
+	clear:both;
+	margin-top:50px;
+	border: 3px solid black;
+}
+#raam{
+	max-width:1000px;
+	border: 10px solid black;
+	padding-bottom:50px;
+}
+.row:nth-child(1) .bead:nth-child(1) {float: right;}
+.row:nth-child(1) .bead:nth-child(2) {float: right;}
+.row:nth-child(1) .bead:nth-child(3) {float: right;}
+.row:nth-child(2) .bead:nth-child(1) {float: right;}
+.row:nth-child(2) .bead:nth-child(2) {float: right;}
+.row:nth-child(2) .bead:nth-child(3) {float: right;}
+.row:nth-child(3) .bead:nth-child(1) {float: right;}
+.row:nth-child(3) .bead:nth-child(2) {float: right;}
+#check {
+	position: fixed;
+	background-color: transparent;
+}
