@@ -59,8 +59,8 @@ div:nth-child(6){
     left: calc((100% - 25%) / 2);
     background-color: red;
 }
-#check {
-	position: fixed;
+#validation {
+	position: relative;
 	top: 0px;
 	left: 0px;
 	background-color: transparent;
