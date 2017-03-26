@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Kodune Ülesanne 6</title>
+	<style type="text/css">
+	.active { background: skyblue; padding: 10px;}
+	</style>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript">
+			$(document).ready(function() {
+			$('li').first().addClass('active');
+			$('#next').click(function(){
+			//$("li").last().addClass('active');
+			
+			//http://stackoverflow.com/questions/6911594/check-if-a-class-active-exist-on-element-with-jquery
+			if($(".active").is(":last-child")){
+			$('li').removeClass('active');
+			$('li').first().addClass('active');
+			} else{
+			$('.active').next().addClass('active');
+			$('.active').prev().removeClass('active');
+			}
+			});
+			
+			$('#prev').click(function(){
+			if($('.active').is(':first-child')){
+			$('li').removeClass('active');
+			$('li').last().addClass('active');
+			
+			}else{
+			$('.active').prev().addClass('active');
+			$('.active').next().removeClass('active');
+			}
+			});
+			
+			
+		});
+
+	</script>
+</head>
+<body>
+<button id="next">edasi</button>
+<button id="prev">tagasi</button>
+
+<ul>
+<li>esimene</li>
+<li>teine</li>
+<li>kolmas</li>
+<li>neljas</li>
+</ul>
+
+</body>
+</html>
