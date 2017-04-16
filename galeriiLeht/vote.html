@@ -1,0 +1,25 @@
+
+	<h3>Vali oma lemmik :)</h3>
+	<form action="?mode=tulemus" method="POST">
+
+		<?php $pildid = array(
+		"pildid/nameless1.jpg",
+		"pildid/nameless2.jpg",
+		"pildid/nameless3.jpg",
+		"pildid/nameless4.jpg",
+		"pildid/nameless5.jpg",
+		"pildid/nameless6.jpg");
+		?>
+
+		<?php foreach($pildid as $value); ?>
+			<p>
+				<label for="<?php echo $value["id"]; ?>">
+					<img src="<?php echo $value; ?>" alt="<?php echo $value["alt"]; ?>" height="100" />
+				</label>
+				<input type="radio" value="<?php echo $value["id"]; ?>" id="p<?php echo $value["img_id"]; ?>" name="value"/>
+			</p>
+		<?php endforeach; ?>
+
+		<br/>
+		<input type="submit" value="Valin!"/>
+	</form>

@@ -1,0 +1,15 @@
+
+	<h3>Fotod</h3>
+	<div id="gallery">
+		<?php $pildid = array(
+            "pildid/nameless1.jpg",
+            "pildid/nameless2.jpg",
+            "pildid/nameless3.jpg",
+            "pildid/nameless4.jpg",
+            "pildid/nameless5.jpg",
+            "pildid/nameless6.jpg");
+    	?>
+			<?php foreach ($pildid as $value) ?>
+
+      <img src="<?php echo $value; ?>" alt="<?php echo $value["alt"];?>" />
+<?php endforeach;?>
