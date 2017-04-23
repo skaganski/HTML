@@ -1,0 +1,27 @@
+<?php
+	if(!empty($_POST)){
+		$teade = array();
+		if(!empty($_POST["pilt"])) {
+			if (empty($_SESSION["voted_for"])){
+				$_SESSION["voted_for"] = $_POST["pilt"];
+				$teade[] = "Aitäh hääletamast!";
+			} else {
+				$teade[] = "Te valisite juba pildi nr {$_SESSION['voted_for']}";
+			}
+		}
+	} else {
+		if (empty($_SESSION["voted_for"])){
+			$teade[] = "Palun valige pilt!";
+		} else {
+			$teade[] = "Te valisite juba pildi nr {$_SESSION['voted_for']}";
+		}
+	}
+?>
+
+<h3>Pildi valiku tulemus:</h3>
+<?php if(!empty($teade)):	?>
+    <?php foreach($teade as $t): ?>
+        <p style="color: blue"><?php echo $t;?></p>
+    <?php endforeach;?>
+<?php endif; ?>
+<p><a href="session_destroy.php">lopeta sessioon</a></p>
