@@ -1,4 +1,4 @@
-	CREATE TABLE skaganski_loomaaed2 (
+CREATE TABLE skaganski_loomaaed2 (
   id int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   nimi varchar(100) NOT NULL,
   puur int(11) NOT NULL,
