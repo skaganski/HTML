@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--character encoding-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guess the Word!</title>
+            
+<!--css file using -->
+<link href="flot/game.css" rel="stylesheet" type="text/css">
+                
+<!-- jquery -->
+<script language="javascript" type="text/javascript" src="flot/jquery.js"></script>
+<script language="javascript" type="text/javascript" src="flot/jquery.flot.js"></script>
+<script language="javascript" type="text/javascript" src="flot/underscore-min.js"></script>
+</head>
+
+<body>
+<script src="flot/game.js"></script>
+    
+<!-- game mode selecting -->
+<div>
+    <h2>Please select game mode<h2>
+    <br>
+    <select id="level">
+      <option value="1">Easy mode</option>
+      <option value="2">Medium mode</option>
+      <option value="3">Hard mode</option>
+    </select>
+</div>
+  <br>
+<!-- buttons -->
+<div class = "wrapper">
+<a href="#" class="button" onclick="displayWord();">Start!</a>
+<a href="#" class="button" onclick="ready();">Check!</a>
+<a href="#" class="button" onclick="myHint();">Rules</a>
+</div>
+
+
+<!-- timer-->
+<div id="timerInformation">Time: <p id="timer">0</p></div>
+  
+<!-- word container -->
+<div id="zone">
+    <div id="display"></div>
+    <div id="result"></div>
+</div>
+  
+<!-- result -->
+<table id="scoreTable" border="0" cellspacing="0" cellpadding="12" align="right">
+    <tr>
+        <td>Attempt</td>
+        <td>Time consumed</td>
+  </tr>
+</table>
+
+<!-- graph -->
+<div class="demo-container">
+    <div id="placeholder" class="demo-placeholder"></div>
+</div>
+</body>
+</html>
