@@ -1,0 +1,40 @@
+<!Doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>jquery</title>
+<script
+src="http://code.jquery.com/jquery-1.11.2.min.js">
+</script>
+<script>
+  $(document).ready(function(){
+    //mida teha, kui leht on laaditud
+    //console.log($("#esimene")); //by id #
+    //console.log($(".mingi")); //by class .
+    $("#esimene").css("color","green");
+    //console.log($("#esimene").css("color"));
+    $(".mingi").css({
+      "color":"red",
+      "font-weight":"bold",
+      "font-size":"20px"
+    });
+    $(".mingi").first().css({"background-color": "skyblue"});
+    $("#teine").next().css({"background-color":"skyblue"});
+    $("#teine").prev().css({"background-color":"pink"});
+//to check if its last or not
+// $("#teine").next().is(":last-child")
+  });
+  </script>
+</head>
+  <body>
+    <li>red</li>
+    <li id="teine">yellow</li>
+    <li>green</li>
+  </ul>
+  <p id="esimene">mingi tekst</p>
+  <p>mingi tekst</p>
+  <p class="mingi">mingi tekst</p>
+  <p>mingi tekst</p>
+  <p class="mingi">mingi tekst</p>
+  </body>
+</html>
