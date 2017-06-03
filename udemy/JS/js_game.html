@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <title>How many fingers?</title>
+    
+    </head>
+
+<body>
+    <input type="number" id="inputNumber">
+    <p>Guess the number from 0 to 5</p>
+    
+    <button id="click">Check</button>
+    
+    <script type="text/javascript">
+    
+    //alert(Math.floor(Math.random()*6)); //because floor is taking the less number, so if its 4.9, the number will be 4
+    
+    
+    document.getElementById("click").onclick=function(){
+       var numberEntered=document.getElementById("inputNumber").value;
+        var guessNumber = Math.floor(Math.random()*6);
+        
+        if(guessNumber==numberEntered){
+            alert("Congratulations!");
+        }else{
+            
+            alert("Nope! The guess number was:"+guessNumber);
+        }
+    }
+    </script>
+    
+    
+    </body>
+
+</html>

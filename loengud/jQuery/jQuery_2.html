@@ -1,0 +1,74 @@
+<!Doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>HTML toorik </title>
+  <script
+  src="http://code.jquery.com/jquery-1.11.2.min.js">
+  </script>
+  <script>
+  //laeb kõike
+$(document).ready(function () {
+
+  $("li").each(function(){
+    //kuna funktsiooni nime ei ole vaja, ehk edasi
+    //selle väärtusega ei tee midagi, võib jätta
+    $(this).css("background-color", $(this).html());
+//this-its li element, .html-equal to tekst
+  });
+  console.log("pilt oli enne:", $("img").attr("src"))
+  $("img").attr("src", "dog.jpg");
+  //kui klikkides on kass, siis muutub koeraks
+  $("img").click(function(){
+    if($("img").attr("src")=="cat.jpg"){
+      $("img").attr("src", "dog.jpg");
+    }else{
+      $("img").attr("src", "cat.jpg");
+    }
+  });
+  //kui olemas klass, siis muuda
+  $("p").each(function(){
+    if($(this).hasClass("mingi")){
+      $(this).css("font-style","italic");
+    }
+
+    });
+//kui hiir on teksti peal, siis värv muutub valgeks
+//kui eemal, siis värv tagasi
+    $("li").on({
+      mouseenter: function(){
+        $(this).css("background-color","white");
+    },
+      mouseleave: function(){
+        $(this).css("background-color", $(this).html());
+      },
+      //klikkides muutub värv
+      click:function(){
+        $(this).css("color", "Gold");
+      }
+    });
+
+    $("p").click(function(){
+      $(this).hide(1000);
+    }
+  );
+});
+  </script>
+
+</head>
+<body>
+
+  <ul>
+  <li>red</li>
+  <li>yellow</li>
+  <li>green</li>
+</ul>
+  <img src="cat.jpg" alt="mingi" height="100"/>
+  <button onclick="$('p').toggle(1500);">Press</button>
+<p id="esimene">mingi tekst</p>
+<p>mingi tekst</p>
+<p class="mingi">mingi tekst</p>
+<p>mingi tekst</p>
+<p class="mingi">mingi tekst</p>
+</body>
+</html>
