@@ -1,0 +1,15 @@
+
+
+
+"Loo leheküljele \"like\" nupp. Kuva välja \"like\"-ide arvu. Andmed salvesta tekstifaili."
+https://github.com/KerstiM/I244-EKSAM
+
+"Loo lehekülje hindamise võimalus (skaalal 1-5 näiteks). Kuva välja leheküljele antud keskmist hinnet. Andmed salvesta tekstifaili.",
+https://github.com/KerstiM/I244-EKSAM-III
+
+"Loo veebilehekülg, mis kuvab kasutajale, mitmendat korda kasutaja lehekülge külastab.",	
+https://github.com/puandr/i244-eksam/tree/master/visits-counter
+
+Loo lehekülje hindamise võimalus (skaalal 1-5 näiteks). Kuva välja leheküljele antud keskmist hinnet. Andmed salvesta andmebaas
+
+https://github.com/humunuk/V6rguEksam
